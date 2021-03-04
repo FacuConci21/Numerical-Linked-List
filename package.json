@@ -1,0 +1,12 @@
+{
+  "name": "first-linked-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc & node ./build/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
