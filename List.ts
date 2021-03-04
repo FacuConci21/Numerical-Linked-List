@@ -65,15 +65,15 @@ export class List {
     }
 
     get first(): ListNode | undefined {
-        return (this.head.value === NaN) ? undefined : this.head;
+        return (!this.head.value) ? undefined : this.head;
     }
     
     get last(): ListNode | undefined {
-        return (this.head.value === NaN) ? undefined: this.nodes[this.end()];
+        return (!this.head.value) ? undefined: this.nodes[this.end()];
     }
 
     get isEmpty(): boolean {
-        return (this.nodes.length <= 0 && this.head.value === NaN) ? true : false;
+        return (!(this.head.value) && this.nodes.length === 0 ) ? true : false;
     }
 
     get size(): number {
@@ -144,7 +144,7 @@ export class List {
         this.nodes = nodesHigh.concat(nodesLow);
     }
 
-    removeElement(value: number): void {
+    remove(value: number): void {
         // Buscamos el indice del elemento a remover.
         const toRemoveIndex: number = this.search(value);
         // Almaceno una referencia a dicho elemento.
