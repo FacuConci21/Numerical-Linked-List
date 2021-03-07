@@ -31,6 +31,13 @@ console.log(list.find(5));
 console.log(list.find(obj));
 console.log(list.find('no existe'));
 
+// Busqueda con retorno de Objeto ListNode
+console.log();
+console.log(list.findNode('a'));
+console.log(list.findNode(5));
+console.log(list.findNode(obj));
+console.log(list.findNode([1,2,3])); // con los arreglos no funciona intuitivamente.
+console.log(list.findNode('no existe'));
 
-console.log('ok');
+console.log('\nok');
 

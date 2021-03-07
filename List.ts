@@ -108,11 +108,12 @@ export class List {
         }
     }
 
-    findNode(value: number): ListNode | undefined {
+    findNode(value: any): ListNode | undefined {
 
         if (this.isEmpty) return undefined;
         
         let nodeIndex = this.search(value);
+        
         if (nodeIndex >= 0) {
             return this.nodes[nodeIndex];
         }
