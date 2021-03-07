@@ -18,20 +18,20 @@ console.log('tamaño de la lista: ' + list.size);
 
 list.printList();
 
-// Añado un elementos al final
+// ADD AN ELEMENT TO THE END
 list.append(8);
 list.append('master');
 list.append([1,2,3]);
 
 list.printList();
 
-// Busquedas
+// SEARCHES
 console.log('\n' + list.find('a'));
 console.log(list.find(5));
 console.log(list.find(obj));
 console.log(list.find('no existe'));
 
-// Busqueda con retorno de Objeto ListNode
+// SEARCH WITH RETURN TYPE LISTNODE
 console.log();
 console.log(list.findNode('a'));
 console.log(list.findNode(5));
@@ -39,7 +39,7 @@ console.log(list.findNode(obj));
 console.log(list.findNode([1,2,3])); // con los arreglos no funciona intuitivamente.
 console.log(list.findNode('no existe'));
 
-// Insertar elementos
+// INSERT ELEMENTS
 
 list.insert(new ListNode('str', list.findNode(obj)), 3);
 list.printList();
@@ -56,6 +56,18 @@ console.log(list.findNode(obj2));
 
 list.insert(new ListNode(new ListNode(1), list.findNode('master')), 1);
 list.printList(); // Es un nodo con un nodo adentro... como lo buscas y visualizas? no tengo idea...
+
+// REMOVE ELEMENTS
+
+console.log();
+list.remove('v');
+list.printList();
+
+console.log();
+
+list.remove(true);
+list.remove(obj2);
+list.printList();
 
 console.log('\nok');
 

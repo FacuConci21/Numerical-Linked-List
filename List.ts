@@ -113,7 +113,7 @@ export class List {
         if (this.isEmpty) return undefined;
         
         let nodeIndex = this.search(value);
-        
+
         if (nodeIndex >= 0) {
             return this.nodes[nodeIndex];
         }
@@ -145,7 +145,7 @@ export class List {
         this.nodes = nodesHigh.concat(nodesLow);
     }
 
-    remove(value: number): void {
+    remove(value: any): void {
         // Buscamos el indice del elemento a remover.
         const toRemoveIndex: number = this.search(value);
         // Almaceno una referencia a dicho elemento.
