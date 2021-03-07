@@ -3,7 +3,7 @@
 ## Description
 
 Lista enlazada desarrollada con TypeScript.
-Es una clase lista con nodos de valores numericos y funciones basicas. Vease tambien la rama de `generic-list` para usar una lista que almacene distintos tipos de datos.
+Es una clase lista con nodos de valores numericos y funciones basicas. Vease tambien la rama [generic-list](https://github.com/FacuConci21/Numerical-Linked-List/tree/generic-list) para usar una lista que almacene distintos tipos de datos.
 
 ## Instalacion
 
