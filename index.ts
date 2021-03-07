@@ -39,5 +39,11 @@ console.log(list.findNode(obj));
 console.log(list.findNode([1,2,3])); // con los arreglos no funciona intuitivamente.
 console.log(list.findNode('no existe'));
 
+// Insertar elementos
+
+list.insert(new ListNode('str', list.findNode(obj)), 3);
+
+list.printList();
+
 console.log('\nok');
 
