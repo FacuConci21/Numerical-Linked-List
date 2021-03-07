@@ -3,7 +3,7 @@
 ## Description
 
 Lista enlazada desarrollada con TypeScript.
-Esta version de la lista enlazada es una version generica, es decir que se puede implementar almacenando distintos tipos de datos, no solo numericos, hasta objetos y arreglos. Variara un poco en sus metodos miembros. Recomiendo mucho leer las referencias de la lista numerica y saber que hace antes que usar esta lista generica.
+Esta version de la lista enlazada es una version generica, es decir que se puede implementar almacenando distintos tipos de datos, no solo numericos, hasta objetos y arreglos. Variara un poco en sus metodos miembros. Recomiendo mucho leer las referencias de la [lista numerica](https://github.com/FacuConci21/Numerical-Linked-List/tree/master) y saber que hace antes que usar esta lista generica.
 
 ## Instalacion
 
