@@ -18,11 +18,19 @@ console.log('tamaño de la lista: ' + list.size);
 
 list.printList();
 
-// list.append(8);
+// Añado un elementos al final
+list.append(8);
+list.append('master');
+list.append([1,2,3]);
 
-// console.log(list.isEmpty);
-// console.log(list.size); 
-// list.printList();
+list.printList();
+
+// Busquedas
+console.log('\n' + list.find('a'));
+console.log(list.find(5));
+console.log(list.find(obj));
+console.log(list.find('no existe'));
+
 
 console.log('ok');
 

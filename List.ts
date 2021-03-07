@@ -80,7 +80,7 @@ export class List {
         return this.nodes.length;
     }
 
-    append(nodeValue: number ): void {
+    append(nodeValue: any ): void {
         let newNode = new ListNode(nodeValue);
 
         if (!this.isEmpty) {
@@ -95,7 +95,7 @@ export class List {
         console.log(this.log());
     }
 
-    find(value: number): string {
+    find(value: any): string {
 
         if (this.isEmpty) return 'is empty';
         
