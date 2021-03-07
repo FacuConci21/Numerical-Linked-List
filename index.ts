@@ -42,7 +42,19 @@ console.log(list.findNode('no existe'));
 // Insertar elementos
 
 list.insert(new ListNode('str', list.findNode(obj)), 3);
+list.printList();
+console.log(list.findNode('str'));
 
+list.insert(new ListNode({ x: 100, y: 102, z: 243 }, list.findNode('master')), 6);
+list.printList();
+console.log(list.findNode({ x: 100, y: 102, z: 243 }));
+
+let obj2: myType = { id: 23, name: 'adfasdf', lastname: 'sdfa'};
+list.insert(new ListNode(obj2, list.findNode('master')), 6);
+list.printList();
+console.log(list.findNode(obj2));
+
+list.insert(new ListNode(new ListNode(1), list.findNode('master')), 1);
 list.printList();
 
 console.log('\nok');
