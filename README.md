@@ -3,7 +3,7 @@
 ## Description
 
 Lista enlazada desarrollada con TypeScript.
-Es una clase lista con nodos de valores numericos y funciones basicas.
+Esta version de la lista enlazada es una version generica, es decir que se puede implementar almacenando distintos tipos de datos, no solo numericos, hasta objetos y arreglos. Variara un poco en sus metodos miembros. Recomiendo mucho leer las referencias de la lista numerica y saber que hace antes que usar esta lista generica.
 
 ## Instalacion
 
@@ -28,7 +28,7 @@ Pero no es necesario eso, con descargar los archivos List.ts y ListNode.ts podes
 
 ## References
 
-<ul><li>Constructor:</li></ul>
+- Constructor:
 
 El constructor puede recibir un solo parametro numerico o un arreglo literal de numeros.<br/>
 Si envias un arreglo de numeros tiene que estar precedido por un valor `undefined`.
@@ -39,7 +39,7 @@ const list = new List(1);
 const list = new List(undefined, [1,3,2,4,5,6,7]);
 ```
 
-<ul><li>Members:</li></ul>
+- Members:
 
 Retornan el primer y ultimo elemento de la lista, ambos retornaran `undefined` si la lista esta vacia.
 Ambos retornaran el mismo elemento si solo contiene un elemento.
@@ -60,7 +60,7 @@ Retorna la cantidad de elementos de la lista.
 list.size;
 ```
 
-<ul><li>Functions Members:</li></ul>
+- Functions Members:
 
 ```
 printList(): void
@@ -94,7 +94,7 @@ remove(value: number): void
 
 Busca un nodo por su atributo `value` y lo remueve de la lista, quedando desreferenciado.
 
-<ul><li>Private Function Members:</li></ul>
+- Private Function Members:
 
 Son metodos privados que utiliza la clase internamente para realizar sus operaciones.
 
