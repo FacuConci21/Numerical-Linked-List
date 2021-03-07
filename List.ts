@@ -5,7 +5,7 @@ export class List {
     private head: ListNode;
     private nodes: Array<ListNode> = [];
 
-    constructor(value?: number, values?: Array<number>) {
+    constructor(value?: any, values?: Array<any>) {
         if (value) {
             this.head = new ListNode(value);
             this.nodes?.push(this.head);
@@ -19,7 +19,7 @@ export class List {
             });
         }
         else {
-            this.head = new ListNode(NaN);
+            this.head = new ListNode(undefined);
         }
     }
 

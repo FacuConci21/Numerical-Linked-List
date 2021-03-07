@@ -1,9 +1,9 @@
 export class ListNode {
 
-    value: number;
+    value: any;
     next: ListNode | undefined;
 
-    constructor(_value: number, _next?: ListNode ) {
+    constructor(_value: any, _next?: ListNode ) {
         this.value = _value;
         this.next = _next;
     }
