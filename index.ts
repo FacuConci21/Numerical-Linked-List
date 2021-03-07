@@ -55,7 +55,7 @@ list.printList();
 console.log(list.findNode(obj2));
 
 list.insert(new ListNode(new ListNode(1), list.findNode('master')), 1);
-list.printList();
+list.printList(); // Es un nodo con un nodo adentro... como lo buscas y visualizas? no tengo idea...
 
 console.log('\nok');
 
